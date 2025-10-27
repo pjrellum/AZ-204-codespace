@@ -1,0 +1,46 @@
+# .NET Core build artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Exercise working directory and files
+azstor/
+data/
+*.txt
+*DOWNLOADED*
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Azure and environment files
+.env
+.azure/
+
+# OS generated files
+.DS_Store
+Thumbs.db

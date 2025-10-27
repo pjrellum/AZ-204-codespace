@@ -1,0 +1,31 @@
+{
+"name": "AZ-204 Azure Storage Development",
+"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+"features": {
+"ghcr.io/devcontainers/features/azure-cli:1": {
+"version": "latest",
+"installBicep": true
+},
+"ghcr.io/devcontainers/features/dotnet:2": {
+"version": "8.0",
+"dotnetRuntimeVersions": "8.0",
+"aspNetCoreRuntimeVersions": "8.0"
+}
+},
+"customizations": {
+"vscode": {
+"extensions": [
+"ms-dotnettools.csharp",
+"ms-dotnettools.csdevkit",
+"ms-azuretools.vscode-azurestorage",
+"ms-azuretools.vscode-azureresourcegroups",
+"ms-vscode.azure-account"
+],
+"settings": {
+"terminal.integrated.defaultProfile.linux": "bash"
+}
+}
+},
+"postCreateCommand": "echo '✅ Dev container ready! You can now:\n1. Run \"az login\" to authenticate with Azure\n2. Follow the exercise at https://microsoftlearning.github.io/mslearn-azure-developer/instructions/azure-storage/01-blob-storage-resources-dotnet.html\n3. The .NET 8.0 SDK and Azure CLI are pre-installed'",
+"remoteUser": "vscode"
+}
