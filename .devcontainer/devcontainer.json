@@ -19,7 +19,8 @@
 "ms-dotnettools.csdevkit",
 "ms-azuretools.vscode-azurestorage",
 "ms-azuretools.vscode-azureresourcegroups",
-"ms-vscode.azure-account"
+"ms-vscode.azure-account",
+"ms-azuretools.vscode-cosmosdb"  
 ],
 "settings": {
 "terminal.integrated.defaultProfile.linux": "bash"
