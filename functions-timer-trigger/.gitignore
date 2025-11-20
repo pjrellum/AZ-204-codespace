@@ -1,0 +1,23 @@
+## Azure Functions
+bin/
+obj/
+.azurefunctions/
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+.python_packages/
+
+## Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+## IDE
+.vscode/
+*.swp
+*.swo
+*~
+
+## OS
+.DS_Store
+Thumbs.db

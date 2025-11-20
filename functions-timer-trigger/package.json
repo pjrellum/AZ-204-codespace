@@ -1,0 +1,13 @@
+{
+  "name": "timer-trigger-demo",
+  "version": "1.0.0",
+  "description": "Timer Trigger Demo for AZ-204",
+  "main": "src/functions/*.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {}
+}
