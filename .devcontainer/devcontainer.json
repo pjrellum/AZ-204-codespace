@@ -23,6 +23,6 @@
       }
     }
   },
-  "postCreateCommand": "npm install -g azure-functions-core-tools@4 --unsafe-perm true && echo '✅ Dev container ready! Run \"az login\" to authenticate with Azure.'",
+  "postCreateCommand": "npm install -g azure-functions-core-tools@4 && echo '✅ Dev container ready! Run \"az login\" to authenticate with Azure.'",
   "remoteUser": "codespace"
 }
