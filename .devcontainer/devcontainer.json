@@ -1,32 +1,40 @@
 {
-"name": "AZ-204 Azure Storage Development",
-"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
-"features": {
-"ghcr.io/devcontainers/features/azure-cli:1": {
-"version": "latest",
-"installBicep": true
-},
-"ghcr.io/devcontainers/features/dotnet:2": {
-"version": "8.0",
-"dotnetRuntimeVersions": "8.0",
-"aspNetCoreRuntimeVersions": "8.0"
-}
-},
-"customizations": {
-"vscode": {
-"extensions": [
-"ms-dotnettools.csharp",
-"ms-dotnettools.csdevkit",
-"ms-azuretools.vscode-azurestorage",
-"ms-azuretools.vscode-azureresourcegroups",
-"ms-vscode.azure-account",
-"ms-azuretools.vscode-cosmosdb"  
-],
-"settings": {
-"terminal.integrated.defaultProfile.linux": "bash"
-}
-}
-},
-"postCreateCommand": "echo '✅ Dev container ready! You can now:\n1. Run \"az login\" to authenticate with Azure\n2. Follow the exercise at https://microsoftlearning.github.io/mslearn-azure-developer/instructions/azure-storage/01-blob-storage-resources-dotnet.html\n3. The .NET 8.0 SDK and Azure CLI are pre-installed'",
-"remoteUser": "vscode"
+  "name": "AZ-204 Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/azure/azure-dev/azd:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-azurestorage",
+        "ms-azuretools.vscode-azureresourcegroups",
+        "ms-vscode.azure-account",
+        "ms-azuretools.vscode-cosmosdb",
+        "ms-azuretools.vscode-apimanagement",
+        "ms-python.python",
+        "humao.rest-client"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "npm install -g azure-functions-core-tools@4 --unsafe-perm true && echo '✅ Dev container ready! Run \"az login\" to authenticate with Azure.'",
+  "remoteUser": "vscode"
 }
