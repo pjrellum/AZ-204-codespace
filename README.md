@@ -7,7 +7,7 @@ A development container pre-configured with all tools needed for AZ-204 (Develop
 | Category | Tools |
 |----------|-------|
 | **Runtimes** | .NET 8.0, Node.js 20, Python 3.11 |
-| **Azure Tools** | Azure CLI, Bicep, Azure Functions Core Tools 4.x, Azure Developer CLI |
+| **Azure Tools** | Azure CLI, Bicep, Azure Functions Core Tools 4.x |
 | **VS Code Extensions** | C# Dev Kit, Azure Functions, Azure Storage, Azure Resources, API Management, Python, REST Client |
 
 ## Getting Started
