@@ -1,0 +1,28 @@
+{
+  "name": "AZ-204 Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:5",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-azurestorage",
+        "ms-azuretools.vscode-azureresourcegroups",
+        "ms-vscode.azure-account",
+        "ms-python.python",
+        "humao.rest-client"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "npm install -g azure-functions-core-tools@4 && echo '✅ Dev container ready! Run \"az login\" to authenticate with Azure.'",
+  "remoteUser": "codespace"
+}
